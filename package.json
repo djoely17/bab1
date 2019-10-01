@@ -1,0 +1,25 @@
+{
+  "name": "bab1",
+  "version": "1.0.0",
+  "description": "Bab1",
+  "main": "index.js",
+  "scripts": {
+    "test": "console.log('Bab1');"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djoely17/bab1.git"
+  },
+  "keywords": [
+    "bab1"
+  ],
+  "author": "djoely",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/djoely17/bab1/issues"
+  },
+  "homepage": "https://github.com/djoely17/bab1#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
