@@ -5,7 +5,7 @@ app.get('/', (req, res) => {
   const number1 = 30;
   const number2 = 30;
   let number3 = null;
-  if (number1 == number2) {
+  if (number1 === number2) {
     number3 = (number1 + number2) * 3;
   } else {
     number3 = number1 + number2;

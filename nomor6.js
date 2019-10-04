@@ -11,11 +11,17 @@ app.get('/', (req, res) => {
   	}
   ];
 
-  console.log("Data Awal : " + JSON.stringify(data))
+  console.log("Data Awal : ")
+  data.forEach(function(val,index) { 
+   console.log(val) 
+   data[index].companyName = "MGG";
+  })  
 
-  data[0].companyName = "MGG";
-  data[1].companyName = "MGG";
-  console.log("Data Baru : " + JSON.stringify(data))
+  console.log("Data Baru : ")
+  data.forEach(function(val,index) { 
+   console.log(val) 
+  }) 
+
   res.send('Nomor 6');
 });
 
