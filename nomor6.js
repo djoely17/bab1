@@ -11,16 +11,43 @@ app.get('/', (req, res) => {
   	}
   ];
 
-  console.log("Data Awal : ")
-  data.forEach(function(val,index) { 
-   console.log(val) 
-   data[index].companyName = "MGG";
-  })  
+  let datamapbaru;
+  const addCompany = () => {
+    dataMapBaru = data.map( obj => ({ name: obj.name, companyName: 'MGG' }));
+    dataMapBaru.forEach(
+      function(val) { 
+        return console.log(val) 
+      }
+    ) 
+  }
 
-  console.log("Data Baru : ")
-  data.forEach(function(val,index) { 
-   console.log(val) 
-  }) 
+  console.log("Data Awal : ")
+  data.forEach( 
+    function(val) { 
+      console.log(val);
+      val.companyName = "MGG";
+    }
+  )  
+
+  console.log("Data Baru Foreach : ")
+  data.forEach( 
+    function(val) { 
+      console.log(val);
+    }
+  )  
+
+  console.log("Data Baru Map: ")
+  addCompany();
+
+  // const datamapbaru = data.map(name => "MGG");
+  // console.log(datamapbaru);  
+
+  // console.log("Data Baru Foreach : ")
+  // dataMapBaru.forEach(
+  //   function(val) { 
+  //     console.log(val) 
+  //   }
+  // ) 
 
   res.send('Nomor 6');
 });
