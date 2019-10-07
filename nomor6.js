@@ -13,32 +13,30 @@ app.get('/', (req, res) => {
 
   let datamapbaru;
   const addCompany = () => {
-    dataMapBaru = data.map( obj => ({ name: obj.name, companyName: 'MGG' }));
-    dataMapBaru.forEach(
-      function(val) { 
+    dataMapBaru = data.map( obj => ({ name: obj.name, companyName: "MGG" }));
+    dataMapBaru.forEach( function(val) { 
         return console.log(val) 
-      }
-    ) 
+    }) 
   }
 
   console.log("Data Awal : ")
-  data.forEach( 
-    function(val) { 
-      console.log(val);
-      val.companyName = "MGG";
-    }
-  )  
+  data.forEach( function(val) { 
+    console.log(val);
+    val.companyName = "MGG";  
+  })  
 
   console.log("Data Baru Foreach : ")
-  data.forEach( 
-    function(val) { 
-      console.log(val);
-    }
-  )  
+  data.forEach( function(val) { 
+    console.log(val);
+  })  
 
   console.log("Data Baru Map: ")
   addCompany();
 
+  // const dataMap = new Map(["name", "Brendan Eich"], ["name", "Rasmus Lerdorf"]);
+  // console.log(dataMap)
+  // dataMap.forEach( (k, v, m) => console.log(`Name: ${v}`) );
+  
   // const datamapbaru = data.map(name => "MGG");
   // console.log(datamapbaru);  
 
