@@ -13,9 +13,16 @@ app.get('/', (req, res) => {
 
   let datamapbaru;
   const addCompany = () => {
-    dataMapBaru = data.map( obj => ({ name: obj.name, companyName: "MGG" }));
+    dataMapBaru = data.map( 
+      obj => (
+        { 
+          name: obj.name, 
+          companyName: "MGG" 
+        }
+      ) 
+    );
     dataMapBaru.forEach( function(val) { 
-        return console.log(val) 
+      return console.log(val) 
     }) 
   }
 
@@ -34,7 +41,9 @@ app.get('/', (req, res) => {
   addCompany();
 
   console.log("\nData Baru Map Foreach : ")
-  dataMapBaru.forEach( (k, v, m) => console.log(`Name: ${k.name}, CompanyName: ${k.companyName}`) );
+  dataMapBaru.forEach( 
+    (k, v, m) => console.log(`Name: ${k.name}, CompanyName: ${k.companyName}`) 
+  );
 
   // const dataMap = new Map(["name", "Brendan Eich"], ["name", "Rasmus Lerdorf"]);
   // console.log(dataMap)
