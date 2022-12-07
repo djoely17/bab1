@@ -21,6 +21,6 @@
   "homepage": "https://github.com/djoely17/bab1#readme",
   "dependencies": {
     "@feathersjs/feathers": "^4.3.4",
-    "express": "^4.17.1"
+    "express": "^4.18.2"
   }
 }
